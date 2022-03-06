@@ -2,7 +2,7 @@
 
 properties([[$class: 'JiraProjectProperty'], buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '5'))])
 
-wdeployCommonServicesProject([
+deployCommonServicesProject([
   name: 'testing-git-tags',
   namespace: 'testing-git-tags',
   envType: ENV_TYPE,
